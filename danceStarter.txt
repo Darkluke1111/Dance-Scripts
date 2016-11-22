@@ -7,12 +7,12 @@ IF(&var != "cancel")
         LOG("Stopping Dance-Session")
     ELSE
         IF(@&dancing = "stop")
-        @&dancing = %&var%
-        EXEC(danceSession.txt,danceSession)
-        LOG("Starting Dance-Session with %&var%")
+            @&dancing = %&var%
+            EXEC(danceSession.txt,danceSession)
+            LOG("Starting Dance-Session with %&var%")
         ELSE
             @&dancing = %&var%
             LOG("Changing Dance to %&var%")
         ENDIF
-    EDIF
+    ENDIF
 ENDIF
