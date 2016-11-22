@@ -1,0 +1,18 @@
+#starting = %YAW%
+#angle = 90
+#half = %#angle% / 2
+
+LOOKS("+%#half%",0,0.2)
+    
+EXEC("pumpIt.txt","pump","120ms","242ms","242ms")
+DO(5)
+    LOOKS("-%#angle%",0,0.5)
+    LOOKS("+%#angle%",0,0.5)
+LOOP
+STOP("pump")
+    
+LOOKS("-%#half%",0,0.2)
+    
+KEYUP("42")
+
+UNSET(@isrunning)
