@@ -6,5 +6,3 @@ $${ $$<danceStarter.txt> }$$
 
 und alles sollte laufen.
 Mit diesem Button kann dann ein beliebiger Tanz gestartet werden, der Tanz gewechselt werden oder gestoppt werden. Nach dem drücken geht dafür ein Prompt-Menu auf, das relativ selbsterklärend ist.
-
-Achtung: Die random-option ist noch nicht implementiert!
