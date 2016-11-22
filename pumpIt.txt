@@ -1,0 +1,7 @@
+WAIT($$[1])
+DO
+    KEYDOWN("42")
+    WAIT($$[2])
+    KEYUP("42")
+    WAIT($$[3])
+LOOP
