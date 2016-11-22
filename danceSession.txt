@@ -7,19 +7,20 @@ DO
             FOR(#i = 0,1,%#size#)
                 STOP(%&dances[%#i%]%)
             NEXT
+            STOP()
         ELSE
             IF(%@&dancing% = "random")
                 SPLIT(",",%@&danceoptions%,&dances[])
                 ARRAYSIZE(&dances[],#size)
                 DEC(#size,1)
                 RANDOM(#rand,0,%#size%)
-                LOG("Dancing >%@&dancing%<")
+                //LOG("Dancing >%@&dancing%<")
                 SET(@isrunning)
                 &filename = "%&dances[%#rand%]%.txt"
                 EXEC(%&filename%,%&dances[%#rand%]%)
             ELSE
       
-                LOG("Dancing >%@&dancing%<")
+                //LOG("Dancing >%@&dancing%<")
                 SET(@isrunning)
                 &filename = "%@&dancing%.txt"
     
