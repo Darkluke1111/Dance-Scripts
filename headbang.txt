@@ -1,0 +1,11 @@
+EXEC("pumpIt.txt","pump","190ms","280ms","500ms")
+LOOKS("+0","-30",0.2)
+DO(10)
+    LOOKS("+0","+60",0.4)
+    LOOKS("+0","-60",0.4)
+LOOP
+LOOKS("+0","-30",0.2)
+STOP("pump")
+KEYUP("42")
+LOOKS("+0",0,0.8)
+UNSET(@isrunning)
