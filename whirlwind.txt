@@ -1,0 +1,16 @@
+DO(5)
+    DO(4)
+        LOOKS("+90",0,0.2) 
+        KEYDOWN("42")
+        WAIT(100ms)
+        KEYUP("42")
+    LOOP       
+
+    DO(4)
+        LOOKS("-90",0,0.2) 
+        KEYDOWN("42")
+        WAIT(100ms)
+        KEYUP("42")
+    LOOP  
+LOOP
+UNSET(@isrunning)
